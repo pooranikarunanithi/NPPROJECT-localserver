@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 //import { useHistory } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-
+import "./Topnav.css"
 const TopNav = () => {
+  
   const dispatch = useDispatch();
   const { user} = useSelector((state) => ({ ...state }));
   const navigate = useNavigate();
@@ -18,37 +19,43 @@ const TopNav = () => {
   };
 
   return (
-    <nav>
-    <div className="nav bg-light d-flex ">
-    <h3>NPBooking</h3>
-      <Link className="nav-link" to="/">
-        Home
-      </Link>
-
-      {user !== null && (
-          <Link className="nav-link" to="/dashboard">
-            Dashboard
-          </Link>
-      )}
+    
+    <div className="head1 container-fluid  text-center">
+      <h1>NpBooking</h1>
+  
+      
       {user!== null && (
-        <a className="nav-link pointer" onClick={logout}>
+         <a className="nav-link  px-3 pointer" onClick={logout}>
           Logout
         </a>
       )}
+    
+      {user !== null && (
+          <Link className="  nav-link  px-3" to="/dashboard">
+            Dashboard
+          </Link>
+      )}
       {user === null && (
         <>
-          <Link className="nav-link" to="/login">
+           <Link className="button3 btn-pink" to="/">Home </Link>
+
+          <Link className=" button4 btn-pink" to="/login">
             Login
           </Link>
-          <Link className="nav-link" to="/register">
+          <Link button className="button5 btn-pink" to="/register">
             Register
           </Link>
+          
+          
         </>
+       
       )}
     </div>
-    </nav>
+    
+    
   );
 };
+    
 
   export default TopNav;
   

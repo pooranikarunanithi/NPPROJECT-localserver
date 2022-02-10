@@ -77,7 +77,7 @@ const DashboardSeller = () => {
             <HomeOutlined className="h1" />
             <h4>Setup payouts to post hotel rooms</h4>
             <p className="lead">
-              MERN partners with stripe to transfer earnings to your bank
+              If You wants to partners with Me Then You can Start with stripe to transfer earnings to your bank
               account
             </p>
             <button disabled={loading}
@@ -98,7 +98,7 @@ const DashboardSeller = () => {
 
   return (
     <>
-      <div className="container-fluid bg-secondary p-5">
+      <div className="container-fluid p-3">
         <ConnectNav />
       </div>
 

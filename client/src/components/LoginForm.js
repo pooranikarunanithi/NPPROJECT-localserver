@@ -1,3 +1,4 @@
+
  const LoginForm = ({
     handleSubmit,
     email,
@@ -13,8 +14,8 @@
 value={email}
 onChange={(e) => setEmail(e.target.value)}
 />
-         
-         
+
+
       </div>
   
       <div className="form-group mb-3">
@@ -30,7 +31,9 @@ onChange={(e) => setEmail(e.target.value)}
   
       <button disabled={!email || !password} className="btn btn-primary">
         Submit
-      </button>
+      </button> 
+       
+
     </form>
   );
   

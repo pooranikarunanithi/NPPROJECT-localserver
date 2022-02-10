@@ -49,7 +49,7 @@ catch(err){
     return(
         <>
         
-        <div className="container-fluid bg-secondary p-3 text-center">
+        <div className="container-fluid  p-3 text-center">
         <h2>Register</h2>
         </div>
         

@@ -75,12 +75,14 @@ const handleChange = (e) => {
 
 
 return (
+ 
   <>
-     <div className="container-fluid bg-secondary p-3 text-center">
+   
+     <div className="container-fluid p-3 text-center">
         <h2>Add Hotels</h2>
       </div>
     <div className="container-fluid ">
-    <div style={{  justifyContent:'center', alignItems:'center', height: '3vh'}}>
+    <div style={{  justifyContent:'center', alignItems:'center'}}>
               </div>
       <div className="row">
         <div className="col-md-7">

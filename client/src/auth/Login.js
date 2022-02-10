@@ -5,7 +5,7 @@ import LoginForm from "../components/LoginForm";
 import { useDispatch } from "react-redux";
 import {  useNavigate } from "react-router-dom";
 import BodyBackgroundColor from "react-body-backgroundcolor";
-
+import "./Login.css";
 
   const Login = ( ) => {
   const navigate =useNavigate();
@@ -45,14 +45,14 @@ import BodyBackgroundColor from "react-body-backgroundcolor";
 
     return (
         <>
-        <div className="container-fluid bg-secondary p-3 text-center">
-        <h2>Login</h2>
-      </div>
+        <div className="container-fluid  p-3 text-center">
+        <h2>Login </h2>
+        </div>
     
           <div className="container">
             <div className="row">
-              <div className= "col-md-3 offset-md-3">
-              <div style={{  justifyContent:'center', alignItems:'center', height: '10vh'}}>
+              <div className= "col-md-5 offset-md-3">
+              <div style={{  justifyContent:'right', alignItems:'center', height: '10vh'}}>
               </div>
                 <LoginForm
                   handleSubmit={handleSubmit}
@@ -64,6 +64,7 @@ import BodyBackgroundColor from "react-body-backgroundcolor";
               </div>
             </div>
             </div>
+            
         </>
       );
     };

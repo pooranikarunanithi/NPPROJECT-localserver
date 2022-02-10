@@ -33,7 +33,7 @@ const SmallCard = ({
 )}
   </div>
   <div className="col-md-8">
-            <div className="card-body">
+            <div className="card-body bg-info">
               <h2 className="card-title">
                 {h.title}{" "}
                 <span className="float-right text-primary">
