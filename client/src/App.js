@@ -21,7 +21,7 @@ import EditHotel from "./hotels/Edithotel";
 import Viewhotel from "./hotels/Viewhotel";
 //import StripeCallback from "./stripe/StripeCallback";
 import StripeCancel from "./stripe/StripeCancel";
-import StripeSuccess from "./stripe/StripeCancel";
+import StripeSuccess from "./stripe/StripeSuccess";
 
 function App() {
   return (
@@ -40,7 +40,7 @@ function App() {
     <Route path="/stripe/callback"  element={ <PrivateRoute> <StripeCallback /> </PrivateRoute> } />
     <Route path="/hotel/edit/:hotelId"  element={ <PrivateRoute> <EditHotel /> </PrivateRoute> } />
     <Route exact path ="/hotel/:hotelId" element = {<Viewhotel />} />
-    <Route path="/stripe/success"  element={ <PrivateRoute> <StripeSuccess /> </PrivateRoute> } />
+    <Route path="/stripe/success/:hotelId"  element={ <PrivateRoute> <StripeSuccess /> </PrivateRoute> } />
     <Route path="/stripe/cancel"  element={ <PrivateRoute> <StripeCancel/> </PrivateRoute> } />
     </Routes> 
     </BrowserRouter>

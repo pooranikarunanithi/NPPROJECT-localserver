@@ -20,7 +20,7 @@ const Home = () => {
     <>
     
          <div className ="head">
-        <h2>hotels</h2>
+        <h2>Hotels</h2>
         </div>
         
       <div className="container-fluid">
@@ -34,12 +34,5 @@ const Home = () => {
     </>
   );
 };
-<footer>
-    <div class="whitebar">
-      <div class="copyright_text">
-      Copyright © 1996–2022
-      Booking.com™. All rights reserved.
-      </div>
-      </div>
-    </footer>
+
 export default Home;

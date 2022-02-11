@@ -7,10 +7,11 @@ const Dashboard = () => {
     <>
       <div className="container-fluid bg-secondary p-5">
         <ConnectNav />
+       
       </div>
 
       <div className="container-fluid p-4">
-        <DashboardNav />
+      <DashboardNav />
       </div>
 
       <div className="container-fluid">

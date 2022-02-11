@@ -64,3 +64,15 @@ export const createConnectAccount = async (token) =>
       },
     }
   );
+
+
+  export const stripeSuccessRequest = async (token, hotelId) =>
+  await axios.post(
+    `${process.env.REACT_APP_API}/stripe-success`,
+    { hotelId },
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );

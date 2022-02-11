@@ -3,6 +3,8 @@
     font-family: Arial, Helvetica, sans-serif; 
     float: right;
   background-color:rgb(33, 33, 128);
+ padding-top: 30px;
+  
 }
 .button2,.button3,.button4,.button5 {
    float: right;
@@ -10,4 +12,13 @@
 font-size: larger;
    margin-right: 5px;
    margin-left: 80px !important;
+   
 } 
+.topnav-right {
+   float: right;
+   margin-left: 80px !important;
+   color: white;
+ }
+ h1{
+   color:white;
+}

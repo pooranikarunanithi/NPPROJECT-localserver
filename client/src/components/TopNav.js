@@ -25,16 +25,18 @@ const TopNav = () => {
   
       
       {user!== null && (
-         <a className="nav-link  px-3 pointer" onClick={logout}>
+       
+         <a className="topnav-right" onClick={logout}>
           Logout
         </a>
-      )}
+      )} 
     
       {user !== null && (
-          <Link className="  nav-link  px-3" to="/dashboard">
+          <Link className=" topnav-right " to="/dashboard">
             Dashboard
           </Link>
       )}
+     
       {user === null && (
         <>
            <Link className="button3 btn-pink" to="/">Home </Link>
